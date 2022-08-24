@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Yemmy y Karenth Cruz">
-    <title>Studio Ghibli</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="https://i.blogs.es/305eed/ghiblii/450_1000.jpg" alt="Logo">
-        <h1>Studio Ghibli</h1>
-      </div>
-    </header>
 
-      <div id="description">
-        <section>
-            <h3>Bienvenido al mundo Ghibli, aquí podrás encontrar el listado de las maravillosas películas animadas.</h3>
-        </section>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Yeimmy Lopez y Karenth Cruz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ghibli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="container">
-        <section class="boxes" id="boxOne">
-          
-          <ol id="peliculas">           
-          </ol>
-          
-        </section>
+<body>
 
-        <section class="boxes" id="boxTwo">
+  <header>
+    <img class="imgLogo" src="./logo-studio-ghibli.png" alt="logo imagen">
+    <nav id="buttons">
+      <h1>Sort By</h1>
+      <button class="btns" id="orderAsc">A - Z</button>
+      <button class="btns" id="orderDesc">Z - A</button>
+      <h1>Filter By</h1>
+      <button class="btns" id="orderByScore">Top Raiting</button>
+      <button class="btns" id="cuantity">Directors</button>
+    </nav>
+  </header>
 
-        </img>
-        </section>
-      </div>
+  <div>
+  <button id="topBtn" title="goTop">Top</button>
+  </div>
 
-    
-    <script src="main.js" type="module"></script>
-  </body>
+  <div>
+    <section>
+      <ul id="peliculas">
+      </ul>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <ul id="directores">
+      </ul>
+    </section>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
